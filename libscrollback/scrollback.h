@@ -7,7 +7,6 @@ bool Libscrollback_initialized = false;
 int Libscrollback_maxBufferSize = 100;
 bool Libscrollback_lineReserved[9] = false;
 
-
 int Libscrollback_initialize()
 {
 	 //any init here
