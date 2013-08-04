@@ -9,18 +9,6 @@ const int Libscrollback_maxBufferSize = 100;
 String Libscrollback_buffer[Libscrollback_maxBufferSize] = ""; // set to an empty string just in case we get problems later for accessing null strings
 bool Libscrollback_lineReserved[Libscrollback_screenSize] = false;
 
-int Libscrollback_initialize()
-{
-	// probably deprecated because robotc doesn't have malloc()
-	//any init here
-	Libscrollback_initialized = true;
-}
-
-void Libscrollback_setMaxBufferSize()
-{
-	// probably deprecated because robotc doesn't have malloc()
-}
-
 void Libscrollback_addToBuffer(String stringToAdd)
 {
 	// push the stack up
