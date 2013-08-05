@@ -45,7 +45,7 @@ void Libscrollback_redraw()
 	int avail = 0;
 	for (int i = 0; i < Libscrollback_screenSize; i++)
 	{
-		if Libscrollback_getReservedLine(i) /* do nothing */ else avail++;
+		if !Libscrollback_getReservedLine(i) avail++;
 	}
 	// construct a temporary array with the amount of lines we have
 	String line[avail];
