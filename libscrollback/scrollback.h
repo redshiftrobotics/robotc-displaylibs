@@ -49,4 +49,16 @@ void Libscrollback_redraw()
 	}
 	// construct a temporary array with the amount of lines we have
 	String line[avail];
+	// fill the array
+	// TODO
+	// draw our temp array to the screen
+	for (int i = 0, int j = 0; i < Libscrollback_screenSize; i++)
+	{
+		if !Libscrollback_getReservedLine(i)
+		{
+			// print to the screen from wherever we are in the array
+			// TODO (I forget how to do this - just print whatever line[j] is)
+			j++;
+		}
+	}
 }
